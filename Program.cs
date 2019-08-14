@@ -18,7 +18,7 @@ namespace O365_Location_Scaner
             Console.WriteLine("by Kevin");
             Console.WriteLine("v0.0.6-beta");
             Console.WriteLine("====================================");
-            string[] list = File.ReadAllLines(Directory.GetCurrentDirectory() + "\\ip.txt");
+            string[] list = File.ReadAllLines(Directory.GetCurrentDirectory() + "\\account.txt");
             FileStream fs = new FileStream((Directory.GetCurrentDirectory() + "\\result.txt"), FileMode.OpenOrCreate);
             FileStream fs_error = new FileStream((Directory.GetCurrentDirectory() + "\\error.txt"), FileMode.OpenOrCreate);
             StreamWriter sw_error = new StreamWriter(fs_error);
